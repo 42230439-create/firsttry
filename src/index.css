@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cloud-dancer: #F4F4F0;
+  --color-charcoal-green: #1C2B25;
+  --color-clay: #BA8A7A;
+  --color-sage: #8F9E8B;
+  --color-electric-teal: #00D2D3;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-script: 'Caveat', cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-cloud-dancer text-charcoal-green font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold tracking-tight;
+  }
+}
